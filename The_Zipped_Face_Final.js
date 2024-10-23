@@ -153,7 +153,7 @@ function draw() {
   // Draw the current text only if the zip has been moved to the left
   if (zipMovedLeft) {
     fill(0);
-    textSize(25);
+    textSize(10);
     for (let i = 0; i < draggableText.length; i++) {
       let charX = startX + textWidth(draggableText.substring(0, i)) + i * letterSpacing;
       let charY = textY + sin(i * 0.5) * speed;
